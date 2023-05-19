@@ -1,0 +1,44 @@
+Overview of SHA256:
+
+The initial hash value H(0) is the following sequence of 64-bit words (which are
+obtained by taking the fractional parts of the square roots of the first eight primes):
+H(0)
+1 = 6a09e667f3bcc908
+H(0)
+2 = bb67ae8584caa73b
+H(0)
+3 = 3c6ef372fe94f82b
+H(0)
+4 = a54ff53a5f1d36f1
+H(0)
+5 = 510e527fade682d1
+H(0)
+6 = 9b05688c2b3e6c1f
+H(0)
+7 = 1f83d9abfb41bd6b
+H(0)
+8 = 5be0cd19137e2179
+
+The Sign used by sha256 and one can also check on page 16 in link below.
+
+ bitwise XOR
+^ bitwise AND
+_ bitwise OR
+: bitwise complement
++ mod 264 addition
+Rn right shift by n bits
+Sn right rotation by n bi
+
+A sequence of constant words, K0;:::;K63; is used in SHA-256. In hex, these are
+given by
+428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 ab1c5ed5
+d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 9bdc06a7 c19bf174
+e49b69c1 efbe4786 0fc19dc6 240ca1cc 2de92c6f 4a7484aa 5cb0a9dc 76f988da
+983e5152 a831c66d b00327c8 bf597fc7 c6e00bf3 d5a79147 06ca6351 14292967
+27b70a85 2e1b2138 4d2c6dfc 53380d13 650a7354 766a0abb 81c2c92e 92722c85
+a2bfe8a1 a81a664b c24b8b70 c76c51a3 d192e819 d6990624 f40e3585 106aa070
+19a4c116 1e376c08 2748774c 34b0bcb5 391c0cb3 4ed8aa4a 5b9cca4f 682e6ff3
+748f82ee 78a5636f 84c87814 8cc70208 90befffa a4506ceb bef9a3f7 c67178f2
+These are the first thirty-two bits of the fractional parts of the cube roots of the first sixty-four primes.
+
+SHA256 description: https://eips.ethereum.org/assets/eip-2680/sha256-384-512.pdf

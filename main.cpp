@@ -22,6 +22,7 @@ int main()
     std::cout << "Block solved ! Nonce: " << nonce << std::endl;
     std::cout << "Block hash:" << std::endl;
     
+    
     //hashblock((uint32_t)2083236893, result);
     hashblock(nonce, version, prevhash, merkle_root, time, nbits, result);
 
