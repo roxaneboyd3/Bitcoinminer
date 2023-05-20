@@ -1,6 +1,6 @@
 # Bitcoin Miner
 
-A project to see how SHA256 and Bitcoin mining work under the hood. 
+Project to see how SHA256 and Bitcoin mining work under the hood.
 
 
 1) Identify the main components, such as the function for importing block data,extracting
