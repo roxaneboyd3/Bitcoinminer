@@ -15,10 +15,10 @@ int main()
     char time[] = "29AB5F49";
     char nbits[] = "FFFF001D";
 
-    uint32_t result[8];
+    uint32_t result[8]; 
     //uint32_t nonce = mineblock(2083236890, version, prevhash, merkle_root, time, nbits);
     uint32_t nonce = mineblock(10, version, prevhash, merkle_root, time, nbits);
-    
+
     std::cout << "Block solved ! Nonce: " << nonce << std::endl;
     std::cout << "Block hash:" << std::endl;
     

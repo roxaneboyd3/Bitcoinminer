@@ -18,6 +18,7 @@ uint32_t rotateInt(uint32_t inputWord, int numberOfBitsToRotate)
     return inputWord | tempWord;
 }
 
+//six functions which are used by sha256 algorithm are bellow
 int Ch(int x, int y, int z)
 {
     return ((x & y) ^ (~x & z));
@@ -47,6 +48,9 @@ uint32_t sig1(uint32_t x)
 {
     return(rotateInt(x, 17) ^ rotateInt(x, 19) ^ (x >> 10));
 }
+
+//A sequence of constant words, K0;:::;K63; is used in SHA-256. In hex, these are
+//given bellow
 
 void hash(uint32_t *input, int bitlength, uint32_t *outputlocation)
 {

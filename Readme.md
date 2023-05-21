@@ -15,3 +15,11 @@ Project to see how SHA256 and Bitcoin mining work under the hood.
 - Displays current hashrate
 
 SHA256 description: https://eips.ethereum.org/assets/eip-2680/sha256-384-512.pdf
+
+
+Flow: The flow of the program is following:
+
+1) sha256.cpp genrate the Hash for transaction
+2) util.cpp Helping in calclation of different function.
+3) miner.cpp is a miner which mine the blocks
+4) main.cpp is to run it, Genesis Block info is define in main.

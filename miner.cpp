@@ -94,6 +94,7 @@ uint32_t mineblock(uint32_t noncestart, char* version, char* prevhash,
             long duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
             float hashrate = 10000000.0 / (float)duration;
+            ///std::cout << "test" << hashblock << std::endl;
             std::cout << "Currently mining at " << hashrate << " hashes / second" << std::endl;
             start = std::chrono::steady_clock::now();
         }
